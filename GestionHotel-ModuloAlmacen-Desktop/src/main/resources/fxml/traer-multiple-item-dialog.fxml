@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<DialogPane xmlns:fx="http://javafx.com/fxml"
+            xmlns="http://javafx.com/javafx"
+            fx:controller="com.cocot3ro.gestionhotel.modulo_almacen.desktop.controller.TraerMultipleItemDialogController"
+            minWidth="500.0">
+
+    <content>
+        <TableView fx:id="tblTraerAlmacen" focusTraversable="false">
+            <columnResizePolicy>
+                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY"/>
+            </columnResizePolicy>
+
+            <columns>
+                <TableColumn fx:id="colNombre" text="Nombre"/>
+                <TableColumn fx:id="colCantidad" text="Cantidad"/>
+            </columns>
+        </TableView>
+    </content>
+
+</DialogPane>

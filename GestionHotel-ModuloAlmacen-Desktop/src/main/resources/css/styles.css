@@ -1,0 +1,31 @@
+.red-row:odd {
+    -fx-background-color: rgba(255, 0, 0, 0.4);
+}
+
+.red-row:odd:selected {
+    -fx-background-color: rgba(255, 0, 0, 0.8);
+}
+
+.red-row:even {
+    -fx-background-color: rgba(255, 0, 0, 0.2);
+}
+
+.red-row:even:selected {
+    -fx-background-color: rgba(255, 0, 0, 0.6);
+}
+
+.orange-row:odd {
+    -fx-background-color: rgba(255, 165, 0, 0.4);
+}
+
+.orange-row:odd:selected {
+    -fx-background-color: rgba(255, 165, 0, 0.8);
+}
+
+.orange-row:even {
+    -fx-background-color: rgba(255, 165, 0, 0.2);
+}
+
+.orange-row:even:selected {
+    -fx-background-color: rgba(255, 165, 0, 0.6);
+}

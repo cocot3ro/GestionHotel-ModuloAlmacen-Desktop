@@ -1,0 +1,4 @@
+gestion-hotel:
+  server:
+    address: localhost
+    port: 7000
