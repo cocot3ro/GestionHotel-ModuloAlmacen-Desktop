@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" fx:id="root" minHeight="600.0" minWidth="800.0"
+            xmlns="http://javafx.com/javafx/17.0.2-ea"
+            fx:controller="com.cocot3ro.gestionhotel.modulo_almacen.desktop.controller.MainFrameController">
+
+    <top>
+        <VBox>
+            <MenuBar>
+                <Menu text="Archivo">
+                    <MenuItem onAction="#dataImport" text="Importar"/>
+                    <MenuItem onAction="#dataExport" text="Exportar"/>
+                </Menu>
+
+                <Menu text="Opciones">
+                    <MenuItem onAction="#showSettingsDialog" text="Configuración"/>
+                </Menu>
+            </MenuBar>
+
+            <fx:include fx:id="toolbar" source="tool-bar.fxml"/>
+        </VBox>
+    </top>
+
+    <center>
+        <TableView fx:id="tblAlmacen" tableMenuButtonVisible="true">
+            <columnResizePolicy>
+                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY"/>
+            </columnResizePolicy>
+
+            <columns>
+                <TableColumn fx:id="colNombre" text="Nombre"/>
+                <TableColumn fx:id="colCantidad" text="Cantidad"/>
+                <TableColumn fx:id="colPack" text="Pack"/>
+                <TableColumn fx:id="colMinimo" text="Minimo"/>
+            </columns>
+        </TableView>
+    </center>
+
+</BorderPane>

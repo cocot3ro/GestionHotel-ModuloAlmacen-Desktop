@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<ToolBar xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17.0.2-ea"
+         fx:controller="com.cocot3ro.gestionhotel.modulo_almacen.desktop.controller.ToolBarController">
+
+    <padding>
+        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+    </padding>
+
+    <Button onAction="#onBtnNuevoClicked">
+        <graphic>
+            <ImageView fitHeight="32" fitWidth="32">
+                <Image url="@../images/new_item.png"/>
+            </ImageView>
+        </graphic>
+    </Button>
+
+    <Button onAction="#onBtnTraerClicked">
+        <graphic>
+            <ImageView fitHeight="32" fitWidth="32">
+                <Image url="@../images/trolley.png"/>
+            </ImageView>
+        </graphic>
+    </Button>
+
+    <Button onAction="#onBtnShippingClicked">
+        <graphic>
+            <ImageView fitHeight="32" fitWidth="32">
+                <Image url="@../images/shipping.png"/>
+            </ImageView>
+        </graphic>
+    </Button>
+
+    <ToggleButton fx:id="btnFilter" onAction="#onBtnFilterClicked">
+        <graphic>
+            <ImageView fitHeight="32" fitWidth="32">
+                <Image url="@../images/filter.png"/>
+            </ImageView>
+        </graphic>
+    </ToggleButton>
+
+</ToolBar>

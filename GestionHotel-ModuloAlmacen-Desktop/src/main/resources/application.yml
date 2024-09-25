@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: Modulo-Almacen
+    ui:
+      title: Gestion Hotel - Modulo Almacén
+  main:
+    web-application-type: none
+
+gestion-hotel:
+  server:
+      baseUrl: ${gestion-hotel.server.address}:${gestion-hotel.server.port}/api
+  modulo-almacen:
+    desktop:
+      config-file: src/main/resources/config/application-updated.yml

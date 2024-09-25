@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.DialogPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<DialogPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17.0.2-ea"
+            fx:controller="com.cocot3ro.gestionhotel.modulo_almacen.desktop.controller.TraerSingleItemDialogController">
+
+    <content>
+        <VBox>
+            <Label fx:id="lblNombre"/>
+            <HBox>
+                <Label text="Cantidad"/>
+                <Spinner fx:id="spnCantidad" initialValue="0"/>
+            </HBox>
+        </VBox>
+    </content>
+
+</DialogPane>

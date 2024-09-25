@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17.0.2-ea"
+            fx:controller="com.cocot3ro.gestionhotel.modulo_almacen.desktop.controller.EditItemMenuController">
+
+    <center>
+        <GridPane hgap="5.0" vgap="5.0">
+
+            <Label GridPane.rowIndex="0" GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.halignment="CENTER"
+                   text="Editar elemento">
+                <font>
+                    <Font size="32.0"/>
+                </font>
+            </Label>
+
+            <Label text="Nombre" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+            <TextField fx:id="txtNombre" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+
+            <Label text="Cantidad" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+            <TextField fx:id="txtCantidad" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+
+            <Label text="Pack" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+            <TextField fx:id="txtPack" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+
+            <Label text="Minimo" GridPane.columnIndex="0" GridPane.rowIndex="4"/>
+            <TextField fx:id="txtMinimo" GridPane.columnIndex="1" GridPane.rowIndex="4"/>
+
+            <padding>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="30.0"/>
+            </padding>
+        </GridPane>
+    </center>
+
+    <bottom>
+        <HBox alignment="TOP_CENTER" spacing="10.0">
+
+            <Button onAction="#cancel" text="Cancelar"/>
+            <Button onAction="#save" text="Guardar"/>
+
+            <BorderPane.margin>
+                <Insets bottom="30.0"/>
+            </BorderPane.margin>
+        </HBox>
+    </bottom>
+
+</BorderPane>

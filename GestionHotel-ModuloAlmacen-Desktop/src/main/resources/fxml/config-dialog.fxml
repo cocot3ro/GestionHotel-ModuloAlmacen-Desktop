@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+<DialogPane xmlns:fx="http://javafx.com/fxml"
+            xmlns="http://javafx.com/javafx"
+            fx:controller="com.cocot3ro.gestionhotel.modulo_almacen.desktop.controller.ConfigDialogController">
+
+    <content>
+        <VBox>
+            <Label text="Conexión al servidor"/>
+
+            <Label text="Dirección IP"/>
+            <TextField fx:id="txtDireccionIP" promptText="Dirección IP"/>
+
+            <Label text="Puerto"/>
+            <TextField fx:id="txtPuerto" promptText="Puerto"/>
+        </VBox>
+    </content>
+
+</DialogPane>
