@@ -5,7 +5,7 @@
 <?import javafx.scene.control.ProgressBar?>
 <?import javafx.scene.layout.VBox?>
 <VBox xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17.0.2-ea" fx:id="root"
-      fx:controller="com.cocot3ro.gestionhotel.modulo_almacen.desktop.controller.WelcomeController"
+      fx:controller="com.cocot3ro.gestionhotel.modulo_almacen_desktop.controller.WelcomeController"
       alignment="TOP_CENTER" prefHeight="150.0" prefWidth="250.0">
 
     <padding>

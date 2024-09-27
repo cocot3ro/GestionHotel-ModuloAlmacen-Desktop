@@ -4,7 +4,7 @@
 <?import javafx.scene.layout.VBox?>
 <DialogPane xmlns:fx="http://javafx.com/fxml"
             xmlns="http://javafx.com/javafx"
-            fx:controller="com.cocot3ro.gestionhotel.modulo_almacen.desktop.controller.ConfigDialogController">
+            fx:controller="com.cocot3ro.gestionhotel.modulo_almacen_desktop.controller.ConfigDialogController">
 
     <content>
         <VBox>

@@ -15,33 +15,33 @@ module clientdesktop {
     requires io.netty.common;
     requires spring.messaging;
 
-    exports com.cocot3ro.gestionhotel.modulo_almacen.desktop.controller;
-    opens com.cocot3ro.gestionhotel.modulo_almacen.desktop.controller to javafx.fxml;
+    exports com.cocot3ro.gestionhotel.modulo_almacen_desktop.controller;
+    opens com.cocot3ro.gestionhotel.modulo_almacen_desktop.controller to javafx.fxml;
 
-    exports com.cocot3ro.gestionhotel.modulo_almacen.desktop.model;
-    opens com.cocot3ro.gestionhotel.modulo_almacen.desktop.model to javafx.fxml, spring.beans, spring.context, spring.core, lombok;
+    exports com.cocot3ro.gestionhotel.modulo_almacen_desktop.model;
+    opens com.cocot3ro.gestionhotel.modulo_almacen_desktop.model to javafx.fxml, spring.beans, spring.context, spring.core, lombok;
 
-    exports com.cocot3ro.gestionhotel.modulo_almacen.desktop.view;
-    opens com.cocot3ro.gestionhotel.modulo_almacen.desktop.view to javafx.fxml, spring.beans, spring.context, spring.core, lombok;
+    exports com.cocot3ro.gestionhotel.modulo_almacen_desktop.view;
+    opens com.cocot3ro.gestionhotel.modulo_almacen_desktop.view to javafx.fxml, spring.beans, spring.context, spring.core, lombok;
 
-    exports com.cocot3ro.gestionhotel.modulo_almacen.desktop;
-    opens com.cocot3ro.gestionhotel.modulo_almacen.desktop to javafx.fxml, spring.beans, spring.context, spring.core, lombok;
+    exports com.cocot3ro.gestionhotel.modulo_almacen_desktop;
+    opens com.cocot3ro.gestionhotel.modulo_almacen_desktop to javafx.fxml, spring.beans, spring.context, spring.core, lombok;
 
     opens fxml;
 
-    exports com.cocot3ro.gestionhotel.modulo_almacen.desktop.config;
-    opens com.cocot3ro.gestionhotel.modulo_almacen.desktop.config to javafx.fxml, spring.beans, spring.context, spring.core, lombok;
+    exports com.cocot3ro.gestionhotel.modulo_almacen_desktop.config;
+    opens com.cocot3ro.gestionhotel.modulo_almacen_desktop.config to javafx.fxml, spring.beans, spring.context, spring.core, lombok;
 
-    exports com.cocot3ro.gestionhotel.modulo_almacen.desktop.view.dialog;
-    opens com.cocot3ro.gestionhotel.modulo_almacen.desktop.view.dialog to javafx.fxml, spring.beans, spring.context, spring.core, lombok;
+    exports com.cocot3ro.gestionhotel.modulo_almacen_desktop.view.dialog;
+    opens com.cocot3ro.gestionhotel.modulo_almacen_desktop.view.dialog to javafx.fxml, spring.beans, spring.context, spring.core, lombok;
 
-    exports com.cocot3ro.gestionhotel.modulo_almacen.desktop.view.event;
-    opens com.cocot3ro.gestionhotel.modulo_almacen.desktop.view.event to javafx.fxml, spring.beans, spring.context, spring.core, lombok;
+    exports com.cocot3ro.gestionhotel.modulo_almacen_desktop.view.event;
+    opens com.cocot3ro.gestionhotel.modulo_almacen_desktop.view.event to javafx.fxml, spring.beans, spring.context, spring.core, lombok;
 
-    exports com.cocot3ro.gestionhotel.modulo_almacen.desktop.client;
-    opens com.cocot3ro.gestionhotel.modulo_almacen.desktop.client to javafx.fxml, spring.beans, spring.context, spring.core, lombok;
+    exports com.cocot3ro.gestionhotel.modulo_almacen_desktop.client;
+    opens com.cocot3ro.gestionhotel.modulo_almacen_desktop.client to javafx.fxml, spring.beans, spring.context, spring.core, lombok;
 
-    exports com.cocot3ro.gestionhotel.modulo_almacen.desktop.client.rsclient;
-    opens com.cocot3ro.gestionhotel.modulo_almacen.desktop.client.rsclient to javafx.fxml, spring.beans, spring.context, spring.core, lombok;
+    exports com.cocot3ro.gestionhotel.modulo_almacen_desktop.client.rsclient;
+    opens com.cocot3ro.gestionhotel.modulo_almacen_desktop.client.rsclient to javafx.fxml, spring.beans, spring.context, spring.core, lombok;
 
 }

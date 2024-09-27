@@ -8,7 +8,6 @@ spring:
 
 gestion-hotel:
   server:
-      baseUrl: ${gestion-hotel.server.address}:${gestion-hotel.server.port}/api
-  modulo-almacen:
-    desktop:
-      config-file: src/main/resources/config/application-updated.yml
+    baseUrl: ${gestion-hotel.server.address}:${gestion-hotel.server.port}/api
+  modulo-almacen-desktop:
+    config-file: src/main/resources/config/application-updated.yml
