@@ -1,6 +1,6 @@
 package com.cocot3ro.gestionhotel.modulo_almacen_desktop.view;
 
-import com.cocot3ro.gestionhotel.modulo_almacen_desktop.ModuloAlmacenDesktopApplication;
+import com.cocot3ro.gestionhotel.modulo_almacen_desktop.GestionHotelModuloAlmacenDesktopApplication;
 import com.cocot3ro.gestionhotel.modulo_almacen_desktop.view.event.CloseEvent;
 import com.cocot3ro.gestionhotel.modulo_almacen_desktop.view.event.WelcomeEvent;
 import javafx.application.Application;
@@ -15,7 +15,7 @@ public class MainFrame extends Application {
 
     @Override
     public void init() {
-        context = new SpringApplicationBuilder(ModuloAlmacenDesktopApplication.class)
+        context = new SpringApplicationBuilder(GestionHotelModuloAlmacenDesktopApplication.class)
                 .properties("spring.config.additional-location=" + getClass().getResource("/config/application-updated.yml"))
                 .run(getParameters().getRaw().toArray(String[]::new));
     }
