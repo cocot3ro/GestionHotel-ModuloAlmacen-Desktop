@@ -3,7 +3,7 @@
 <?import javafx.scene.control.*?>
 <DialogPane xmlns:fx="http://javafx.com/fxml"
             xmlns="http://javafx.com/javafx"
-            fx:controller="com.cocot3ro.gestionhotel.modulo_almacen.desktop.controller.ShippingDialogController"
+            fx:controller="com.cocot3ro.gestionhotel.modulo_almacen_desktop.controller.ShippingDialogController"
             minWidth="500.0">
 
     <content>

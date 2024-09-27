@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.VBox?>
 <BorderPane xmlns:fx="http://javafx.com/fxml/1" fx:id="root" minHeight="600.0" minWidth="800.0"
             xmlns="http://javafx.com/javafx/17.0.2-ea"
-            fx:controller="com.cocot3ro.gestionhotel.modulo_almacen.desktop.controller.MainFrameController">
+            fx:controller="com.cocot3ro.gestionhotel.modulo_almacen_desktop.controller.MainFrameController">
 
     <top>
         <VBox>

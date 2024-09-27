@@ -8,11 +8,11 @@
         <version>3.3.4</version>
         <relativePath/>
     </parent>
-    <groupId>com.cocot3ro.gestionhotel.modulo_almacen</groupId>
-    <artifactId>desktop</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
-    <name>ModuloAlmacen-Desktop</name>
-    <description>ModuloAlmacen-Desktop</description>
+    <groupId>com.cocot3ro.gestionhotel</groupId>
+    <artifactId>GestionHotel-ModuloAlmacen-Desktop</artifactId>
+    <version>1.0.0</version>
+    <name>GestionHotel-ModuloAlmacen-Desktop</name>
+    <description>GestionHotel-ModuloAlmacen-Desktop</description>
     <url/>
     <licenses>
         <license/>

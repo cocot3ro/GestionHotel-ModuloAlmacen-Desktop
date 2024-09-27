@@ -4,7 +4,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.image.*?>
 <ToolBar xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17.0.2-ea"
-         fx:controller="com.cocot3ro.gestionhotel.modulo_almacen.desktop.controller.ToolBarController">
+         fx:controller="com.cocot3ro.gestionhotel.modulo_almacen_desktop.controller.ToolBarController">
 
     <padding>
         <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>

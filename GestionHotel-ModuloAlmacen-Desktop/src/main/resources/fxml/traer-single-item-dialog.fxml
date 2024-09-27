@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 <DialogPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17.0.2-ea"
-            fx:controller="com.cocot3ro.gestionhotel.modulo_almacen.desktop.controller.TraerSingleItemDialogController">
+            fx:controller="com.cocot3ro.gestionhotel.modulo_almacen_desktop.controller.TraerSingleItemDialogController">
 
     <content>
         <VBox>
