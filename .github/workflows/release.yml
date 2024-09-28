@@ -44,7 +44,7 @@ jobs:
   #       jpackage --type ${{ matrix.package_type }} \
   #       --input target/ \
   #       --main-jar GestionHotel-ModuloAlmacen-Desktop-${{ env.VERSION }}.jar \
-  #       --main-class com.cocot3ro.gestionhotel.modulo_almacen_desktop.GestionHotelModuloAlmacenDesktopApplication \
+  #       --main-class org.springframework.boot.loader.launch.JarLauncher \
   #       --name "GestionHotel_ModuloAlmacen_Desktop" \
   #       --dest target/installer \
   #       --app-version ${{ env.VERSION }}
@@ -90,7 +90,7 @@ jobs:
           jpackage --type ${{ matrix.package_type }} `
           --input target/ `
           --main-jar GestionHotel-ModuloAlmacen-Desktop-${{ env.VERSION }}.jar `
-          --main-class com.cocot3ro.gestionhotel.modulo_almacen_desktop.GestionHotelModuloAlmacenDesktopApplication `
+          --main-class org.springframework.boot.loader.launch.JarLauncher `
           --name "GestionHotel_ModuloAlmacen_Desktop" `
           --dest target/installer `
           --app-version ${{ env.VERSION }}
