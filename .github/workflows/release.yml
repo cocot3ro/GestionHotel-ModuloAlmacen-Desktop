@@ -107,6 +107,6 @@ jobs:
         run: |
           curl -X POST \
             -H "Accept: application/vnd.github.everest-preview+json" \
-            -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+            -H "Authorization: token ${{ secrets.PAT }}" \
             https://api.github.com/repos/cocot3ro/GestionHotel-Suite/dispatches \
             -d '{"event_type":"update_submodule"}'
