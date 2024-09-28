@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.cocot3ro.gestionhotel</groupId>
     <artifactId>GestionHotel-ModuloAlmacen-Desktop</artifactId>
-    <version>1.0.0</version>
+    <version>1.1.0</version>
     <name>GestionHotel-ModuloAlmacen-Desktop</name>
     <description>GestionHotel-ModuloAlmacen-Desktop</description>
     <url/>
