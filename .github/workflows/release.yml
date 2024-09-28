@@ -47,7 +47,7 @@ jobs:
           --main-jar GestionHotel-ModuloAlmacen-Desktop-${{ env.VERSION }}.jar `
           --main-class org.springframework.boot.loader.launch.JarLauncher `
           --dest target/installer `
-          --app-version ${{ env.VERSION }}
+          --app-version ${{ env.VERSION }} `
           --name "GestiónHotel Módulo Almacén" `
           --about-url "https://cocot3ro.github.io./GestionHotel-Suite" `
           --win-update-url "https://cocot3ro.github.io./GestionHotel-Suite" `
