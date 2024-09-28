@@ -44,7 +44,7 @@ jobs:
   #       jpackage --type ${{ matrix.package_type }} \
   #       --input target/ \
   #       --main-jar GestionHotel-ModuloAlmacen-Desktop-${{ env.VERSION }}.jar \
-  #       --main-class com.cocot3ro.gestionhotel.modulo_almacen_desktop.GestionHotelModuloAlmacenDesktopApplication \
+  #       --main-class org.springframework.boot.loader.launch.JarLauncher \
   #       --name "GestionHotel_ModuloAlmacen_Desktop" \
   #       --dest target/installer \
   #       --app-version ${{ env.VERSION }}
@@ -90,7 +90,7 @@ jobs:
           jpackage --type ${{ matrix.package_type }} `
           --input target/ `
           --main-jar GestionHotel-ModuloAlmacen-Desktop-${{ env.VERSION }}.jar `
-          --main-class com.cocot3ro.gestionhotel.modulo_almacen_desktop.GestionHotelModuloAlmacenDesktopApplication `
+          --main-class org.springframework.boot.loader.launch.JarLauncher `
           --name "GestionHotel_ModuloAlmacen_Desktop" `
           --dest target/installer `
           --app-version ${{ env.VERSION }}
@@ -102,7 +102,7 @@ jobs:
           path: GestionHotel-ModuloAlmacen-Desktop/target/installer/*.${{ matrix.package_type }}
 
   release:
-    needs: 
+    needs:
       # - build-linux
       - build-windows
     runs-on: ubuntu-latest
@@ -137,3 +137,16 @@ jobs:
           ./exe-installer/*.exe
         # ./deb-installer/*.deb
         # ./rpm-installer/*.rpm
+
+  update-submodules:
+    needs: release
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Trigger superrepository workflow
+        run: |
+          curl -X POST \
+            -H "Accept: application/vnd.github.everest-preview+json" \
+            -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+            https://api.github.com/repos/cocot3ro/GestionHotel-Suite/dispatches \
+            -d '{"event_type":"update_submodule"}'
