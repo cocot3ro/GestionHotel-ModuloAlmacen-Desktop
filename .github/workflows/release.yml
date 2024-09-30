@@ -10,7 +10,7 @@ on:
 
 jobs:
 
-  build-windows:
+  build-msi-installer:
     runs-on: windows-latest
 
     if: github.event.pull_request.merged == true || github.event_name == 'workflow_dispatch'
@@ -62,7 +62,7 @@ jobs:
 
   release:
     needs:
-      - build-windows
+      - build-msi-installer
     runs-on: ubuntu-latest
 
     steps:
@@ -92,9 +92,8 @@ jobs:
         prerelease: false
         files: |
           ./msi-installer/*.msi
-          ./exe-installer/*.exe
 
-  update-submodules:
+  trigger-parent:
     needs: release
     runs-on: ubuntu-latest
 
