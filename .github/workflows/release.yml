@@ -15,10 +15,6 @@ jobs:
 
     if: github.event.pull_request.merged == true || github.event_name == 'workflow_dispatch'
 
-    strategy:
-      matrix:
-        package_type: [msi, exe]
-
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -39,10 +35,10 @@ jobs:
         run: |
           "VERSION=$(mvn help:evaluate '-Dexpression=project.version' -q -DforceStdout)" >> $env:GITHUB_ENV
 
-      - name: Generate ${{ matrix.package_type }} installer
+      - name: Generate MSI installer
         working-directory: ./GestionHotel-ModuloAlmacen-Desktop
         run: |
-          jpackage --type ${{ matrix.package_type }} `
+          jpackage --type msi `
           --input target/ `
           --main-jar GestionHotel-ModuloAlmacen-Desktop-${{ env.VERSION }}.jar `
           --main-class org.springframework.boot.loader.launch.JarLauncher `
@@ -58,11 +54,11 @@ jobs:
           --win-dir-chooser `
           --win-per-user-install
 
-      - name: Upload ${{ matrix.package_type }} installer
+      - name: Upload MSI installer
         uses: actions/upload-artifact@v4
         with:
-          name: ${{ matrix.package_type }}-installer
-          path: GestionHotel-ModuloAlmacen-Desktop/target/installer/*.${{ matrix.package_type }}
+          name: msi-installer
+          path: GestionHotel-ModuloAlmacen-Desktop/target/installer/*.msi
 
   release:
     needs:
